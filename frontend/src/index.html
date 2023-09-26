@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>RPS Game</title>
+</head>
+<body>
+
+    <h1> Rock | Paper | Scissor</h1>
+    <h3 id="playGameSentence"> Please enter a username to play the game! </h3>
+
+    <form id="inputYourName">
+        <input type="text" placeholder="Username" id="userName">
+        
+
+        <button id="submitButton"> Submit </button>
+
+        <h3 id="userNameOutputh3"></h3>
+        <h2 id="errorUserNameOutput"></h2>
+    </form>
+
+
+    <main>
+        <div id="picturesDiv">
+            <img src="./pictures/rock-emoji.png" id="rock">
+
+            <img src="./pictures/paper-emoji.png" id="paper">
+    
+            <img src="./pictures/scissors-emoji.png" id="scissor">
+        </div>
+        
+        <div id="tryAgain" >
+            <p id="tryAgainText"></p>
+            <button id="tryAgainButton">Try again</button>
+        </div>
+    </main>
+
+
+    <form>
+        <div>
+            <div id=" pickedHand">
+                <p id="youPicked">You picked:</p>
+                <p id="computerPicked">Computer picked:</p>
+            </div>
+        
+            <p id="yourScore"> Your score: </p>
+            
+      </div>
+
+      <div id="highscoreDiv">
+      <h5>High score:</h5>
+      <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ol>
+    </div>
+    </form>
+       
+</body>
+</html>
